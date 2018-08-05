@@ -5,9 +5,9 @@
 </head>
 	
 <body>
-    <input type="button" id="a" value="A" />
-    <input type="button" id="b" value="B" />
-    <input type="button" id="c" value="C" />
+    <input type="button" id="a" value="찬우는 뭐다?" />
+    <input type="button" id="b" value="찬우는 진짜" />
+    <input type="button" id="c" value="??" />
     <script type="text/javascript">
         var hw = document.getElementById('a');
         hw.addEventListener('click', function(){
@@ -24,9 +24,12 @@
         var hw = document.getElementById('c');
         hw.addEventListener('click', function(){
 	var n = prompt("가위 바위 보","");
-	if(n=="보") alert("무승부");
-	else alert("승리");
-        })
+	if(n=="보"||n=="가위"||n=="바위"){
+		if(n=="보") alert("승리");
+		else if(n=="바위") alert("무승부");
+		else if(n=="보") alert("패배");
+        }else alert("제대로 해");
+	)
     </script>
 </body>
 </html>
